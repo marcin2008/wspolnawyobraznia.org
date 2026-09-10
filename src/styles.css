@@ -153,21 +153,27 @@
     border-color: var(--color-border);
   }
 
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     scroll-behavior: smooth;
   }
+  img, video { max-width: 100%; }
   h1, h2, h3 { letter-spacing: 0; }
   ::selection { background: var(--accent); color: var(--accent-foreground); }
 }
 
-@utility section-pad { position: relative; padding-block: clamp(6rem, 11vw, 10rem); }
+@utility section-pad { position: relative; padding-block: clamp(4.5rem, 11vw, 10rem); }
 @utility chapter { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .18em; color: var(--primary); margin-bottom: 1.25rem; }
-@utility section-title { font-family: var(--font-display); font-size: clamp(2.7rem, 6vw, 5.4rem); line-height: 1.05; }
-@utility lead { font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.65; }
-@utility page-number { position: absolute; top: 2rem; right: max(1.25rem, calc((100vw - 80rem) / 2)); font-family: var(--font-display); font-size: 1.2rem; color: color-mix(in oklab, var(--foreground) 38%, transparent); }
+@utility section-title { font-family: var(--font-display); font-size: clamp(2.1rem, 7vw, 5.4rem); line-height: 1.08; overflow-wrap: break-word; hyphens: auto; }
+@utility lead { font-size: clamp(1.05rem, 2vw, 1.5rem); line-height: 1.65; }
+@utility page-number { position: absolute; top: 1.25rem; right: max(1rem, calc((100vw - 80rem) / 2)); font-family: var(--font-display); font-size: 1rem; color: color-mix(in oklab, var(--foreground) 38%, transparent); }
 @utility nav-link { position: relative; font-size: .75rem; font-weight: 700; }
 @utility field-label { display: grid; gap: .55rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
 @utility field { width: 100%; border: 0; border-bottom: 1px solid var(--border); background: transparent; padding: .8rem 0; font-size: 1rem; font-weight: 400; text-transform: none; letter-spacing: 0; outline: none; }
