@@ -30,7 +30,6 @@ const nav = [
 
 function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [sent, setSent] = useState(false);
 
   useEffect(() => {
     const items = document.querySelectorAll("[data-reveal]");
@@ -58,7 +57,7 @@ function Index() {
       </header>
 
       <section id="start" className="relative min-h-[92svh] pt-16 sm:pt-20">
-        <img src={libraryImage} width={1600} height={1008} alt="Plenerowa biblioteczka pełna książek przy placu zabaw" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={libraryImage} width={1600} height={725} alt="Plenerowa biblioteczka pełna książek przy placu zabaw" className="absolute inset-0 h-full w-full object-cover object-top" />
         <div className="hero-wash absolute inset-0" />
         <div className="relative mx-auto flex min-h-[calc(92svh-4rem)] max-w-7xl items-end px-4 pb-12 pt-20 sm:px-5 sm:min-h-[calc(92svh-5rem)] lg:px-10 lg:pb-24">
           <div className="max-w-3xl animate-rise">
@@ -86,7 +85,7 @@ function Index() {
         <div className="page-number">02</div>
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-5 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-10">
           <div data-reveal className="reveal relative"><img src={childImage} loading="lazy" width={1008} height={1264} alt="Dziecko wybierające książkę z plenerowej biblioteczki" className="aspect-[4/5] w-full object-cover"/><div className="sun-badge"><span className="text-2xl sm:text-3xl">☀</span><span>Start za<br/><b>10 dni</b></span></div></div>
-          <div data-reveal className="reveal"><p className="chapter">Pierwszy projekt</p><h2 className="section-title">Biblioteka<br/><em>w Słońcu</em></h2><p className="lead mt-6 sm:mt-7">Małe, drewniane biblioteczki z wyselekcjonowaną literaturą dla dzieci w wieku 2–15 lat.</p><div className="my-8 flex flex-wrap items-center gap-x-3 gap-y-2 border-y border-foreground/15 py-5 sm:gap-4"><span className="font-display text-2xl text-primary sm:text-3xl">Weź</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Przeczytaj</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Podziel się</span></div><p className="leading-relaxed text-muted-foreground">Idea <b>Book-swap</b> jest prosta i oparta na wzajemnym zaufaniu: możesz wypożyczyć książkę, przeczytać ją bez pośpiechu i odnieść na miejsce — albo zostawić w zamian inny tytuł, który sam Cię zachwycił. Dzięki temu każda biblioteczka Biblioteki w Słońcu żyje, zmienia się i rośnie razem z lokalną społecznością.</p></div>
+          <div data-reveal className="reveal"><p className="chapter">Projekt Główny</p><h2 className="section-title">Biblioteka<br/>w Słońcu</h2><p className="lead mt-6 sm:mt-7">Małe, drewniane biblioteczki z wyselekcjonowaną literaturą dla dzieci w wieku 2–15 lat.</p><div className="my-8 flex flex-wrap items-center gap-x-3 gap-y-2 border-y border-foreground/15 py-5 sm:gap-4"><span className="font-display text-2xl text-primary sm:text-3xl">Weź</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Przeczytaj</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Podziel się</span></div><p className="leading-relaxed text-muted-foreground">Idea <b>Book-swap</b> jest prosta i oparta na wzajemnym zaufaniu: możesz wypożyczyć książkę, przeczytać ją bez pośpiechu i odnieść na miejsce — albo zostawić w zamian inny tytuł, który sam Cię zachwycił. Dzięki temu każda biblioteczka Biblioteki w Słońcu żyje, zmienia się i rośnie razem z lokalną społecznością.</p></div>
         </div>
       </section>
 
@@ -104,7 +103,28 @@ function Index() {
       </section>
 
       <section id="kontakt" className="section-pad bg-background">
-        <div className="page-number">06</div><div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-5 lg:grid-cols-2 lg:gap-24 lg:px-10"><div data-reveal className="reveal"><p className="chapter">Kontakt</p><h2 className="section-title">Zróbmy razem coś dobrego.</h2><p className="lead mt-6 sm:mt-7">Masz miejsce na biblioteczkę, chcesz zostać partnerem albo wesprzeć projekt? Napisz do nas.</p><p className="mt-8 border-l-2 border-primary pl-5 text-sm text-muted-foreground">Adres e-mail i numer telefonu wymagają uzupełnienia przed uruchomieniem strony.</p></div><form data-reveal className="reveal space-y-5" onSubmit={(e)=>{e.preventDefault();setSent(true)}}><label className="field-label">Imię i nazwisko<input required className="field" /></label><label className="field-label">E-mail<input required type="email" className="field" /></label><label className="field-label">W czym możemy pomóc?<select className="field"><option>Chcę zafundować biblioteczkę</option><option>Chcę zgłosić miejsce</option><option>Chcę zostać wolontariuszem</option><option>Inna sprawa</option></select></label><label className="field-label">Wiadomość<textarea required rows={4} className="field resize-none" /></label><Button type="submit" variant="warm" size="hero">Wyślij wiadomość <ArrowRight /></Button>{sent&&<p className="text-sm text-primary" role="status">Dziękujemy. Formularz jest gotowy wizualnie; wysyłka zostanie uruchomiona po dodaniu adresu kontaktowego.</p>}</form></div>
+        <div className="page-number">06</div>
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-5 lg:grid-cols-2 lg:gap-24 lg:px-10">
+          <div data-reveal className="reveal">
+            <p className="chapter">Kontakt</p>
+            <h2 className="section-title">Zróbmy razem coś dobrego.</h2>
+            <p className="lead mt-6 sm:mt-7">Masz miejsce na biblioteczkę, chcesz zostać partnerem albo wesprzeć projekt? Napisz lub zadzwoń.</p>
+          </div>
+          <div data-reveal className="reveal space-y-6 lg:pt-16">
+            <div className="border-t border-foreground/20 pt-5">
+              <p className="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">E-mail</p>
+              <a href="mailto:biuro@wspolnawyobraznia.org" className="mt-2 block break-words font-display text-xl text-primary sm:text-2xl">biuro@wspolnawyobraznia.org</a>
+            </div>
+            <div className="border-t border-foreground/20 pt-5">
+              <p className="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">Telefon</p>
+              <a href="tel:+48501550916" className="mt-2 block font-display text-xl text-primary sm:text-2xl">501 550 916</a>
+            </div>
+            <div className="border-t border-foreground/20 pt-5">
+              <p className="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">Adres</p>
+              <p className="mt-2 font-display text-xl sm:text-2xl">Królów Polskich 9A</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="bg-paper py-16 sm:py-20"><div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 text-center sm:gap-10 sm:px-5"><video className="h-44 w-44 rounded-full object-cover mix-blend-multiply sm:h-64 sm:w-64" autoPlay muted loop playsInline poster={logoAsset.url}><source src={logoAnimationAsset.url} type="video/mp4"/></video><div><p className="font-display text-2xl sm:text-3xl">Wspólna Wyobraźnia</p><p className="mt-2 text-muted-foreground">Książki bliżej dzieci. Biblioteki bliżej codzienności.</p></div></div></section>

@@ -166,18 +166,20 @@
   }
   img, video { max-width: 100%; }
   h1, h2, h3 { letter-spacing: 0; }
+  em, i, address { font-style: normal; }
+  * { font-style: normal; }
   ::selection { background: var(--accent); color: var(--accent-foreground); }
 }
 
-@utility section-pad { position: relative; padding-block: clamp(4.5rem, 11vw, 10rem); }
+@utility section-pad { position: relative; overflow-x: clip; padding-block: clamp(4.5rem, 11vw, 10rem); }
 @utility chapter { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .18em; color: var(--primary); margin-bottom: 1.25rem; }
-@utility section-title { font-family: var(--font-display); font-size: clamp(2.1rem, 7vw, 5.4rem); line-height: 1.08; overflow-wrap: break-word; hyphens: auto; }
+@utility section-title { font-family: var(--font-display); font-size: clamp(1.85rem, 6vw, 5.2rem); line-height: 1.12; overflow-wrap: break-word; word-break: normal; hyphens: none; text-wrap: balance; }
 @utility lead { font-size: clamp(1.05rem, 2vw, 1.5rem); line-height: 1.65; }
-@utility page-number { position: absolute; top: 1.25rem; right: max(1rem, calc((100vw - 80rem) / 2)); font-family: var(--font-display); font-size: 1rem; color: color-mix(in oklab, var(--foreground) 38%, transparent); }
+@utility page-number { position: absolute; top: 1.25rem; right: max(1rem, calc((100% - 80rem) / 2)); font-family: var(--font-display); font-size: 1rem; color: color-mix(in oklab, var(--foreground) 38%, transparent); }
 @utility nav-link { position: relative; font-size: .75rem; font-weight: 700; }
 @utility field-label { display: grid; gap: .55rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
 @utility field { width: 100%; border: 0; border-bottom: 1px solid var(--border); background: transparent; padding: .8rem 0; font-size: 1rem; font-weight: 400; text-transform: none; letter-spacing: 0; outline: none; }
-@utility sun-badge { position: absolute; right: -1rem; bottom: 2rem; display: flex; height: 9rem; width: 9rem; align-items: center; justify-content: center; gap: .5rem; border-radius: 999px; background: var(--primary); color: var(--primary-foreground); transform: rotate(-8deg); }
+@utility sun-badge { position: absolute; right: 0.5rem; bottom: 2rem; display: flex; height: 9rem; width: 9rem; align-items: center; justify-content: center; gap: .5rem; border-radius: 999px; background: var(--primary); color: var(--primary-foreground); transform: rotate(-8deg); }
 @utility reveal { opacity: 0; transform: translateY(2rem); transition: opacity .8s ease, transform .8s ease; }
 
 .reveal.is-visible, [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
