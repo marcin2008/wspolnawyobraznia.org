@@ -30,7 +30,6 @@ const nav = [
 
 function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [sent, setSent] = useState(false);
 
   useEffect(() => {
     const items = document.querySelectorAll("[data-reveal]");
