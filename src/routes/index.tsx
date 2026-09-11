@@ -57,7 +57,7 @@ function Index() {
       </header>
 
       <section id="start" className="relative min-h-[92svh] pt-16 sm:pt-20">
-        <img src={libraryImage} width={1600} height={1008} alt="Plenerowa biblioteczka pełna książek przy placu zabaw" className="absolute inset-0 h-full w-full object-cover object-[50%_22%]" />
+        <img src={libraryImage} width={1600} height={725} alt="Plenerowa biblioteczka pełna książek przy placu zabaw" className="absolute inset-0 h-full w-full object-cover object-top" />
         <div className="hero-wash absolute inset-0" />
         <div className="relative mx-auto flex min-h-[calc(92svh-4rem)] max-w-7xl items-end px-4 pb-12 pt-20 sm:px-5 sm:min-h-[calc(92svh-5rem)] lg:px-10 lg:pb-24">
           <div className="max-w-3xl animate-rise">
