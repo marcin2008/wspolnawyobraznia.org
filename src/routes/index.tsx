@@ -84,14 +84,14 @@ function Index() {
       <section id="projekt" className="section-pad bg-secondary">
         <div className="page-number">02</div>
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-5 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-10">
-          <div data-reveal className="reveal relative"><img src={childImage} loading="lazy" width={1008} height={1264} alt="Dziecko wybierające książkę z plenerowej biblioteczki" className="aspect-[4/5] w-full object-cover"/><div className="sun-badge"><span className="text-2xl sm:text-3xl">☀</span><span>Start za<br/><b>10 dni</b></span></div></div>
-          <div data-reveal className="reveal"><p className="chapter">Projekt Główny</p><h2 className="section-title">Biblioteka<br/>w Słońcu</h2><p className="lead mt-6 sm:mt-7">Małe, drewniane biblioteczki z wyselekcjonowaną literaturą dla dzieci w wieku 2–15 lat.</p><div className="my-8 flex flex-wrap items-center gap-x-3 gap-y-2 border-y border-foreground/15 py-5 sm:gap-4"><span className="font-display text-2xl text-primary sm:text-3xl">Weź</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Przeczytaj</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Podziel się</span></div><p className="leading-relaxed text-muted-foreground">Idea <b>Book-swap</b> jest prosta i oparta na wzajemnym zaufaniu: możesz wypożyczyć książkę, przeczytać ją bez pośpiechu i odnieść na miejsce — albo zostawić w zamian inny tytuł, który sam Cię zachwycił. Dzięki temu każda biblioteczka Biblioteki w Słońcu żyje, zmienia się i rośnie razem z lokalną społecznością.</p></div>
+          <div data-reveal className="reveal relative"><img src={childImage} loading="lazy" width={1008} height={1264} alt="Dziecko wybierające książkę z plenerowej biblioteczki" className="aspect-[4/5] w-full object-cover"/><div className="sun-badge"><span className="text-2xl sm:text-3xl">☀</span><span>Metalowa<br/>tabliczka Fundatora</span></div></div>
+          <div data-reveal className="reveal"><p className="chapter">Projekt Główny</p><h2 className="section-title">Biblioteka<br/>w Słońcu</h2><p className="lead mt-6 sm:mt-7">Małe, drewniane biblioteczki z wyselekcjonowaną literaturą dla dzieci w wieku 2–15 lat.</p><div className="my-8 flex flex-wrap items-center gap-x-3 gap-y-2 border-y border-foreground/15 py-5 sm:gap-4"><span className="font-display text-2xl text-primary sm:text-3xl">Weź</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Przeczytaj</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Podziel się</span></div><p className="leading-relaxed text-muted-foreground">Idea <b>Book-Swap</b> jest naturalna i prosta i oparta na wzajemnym zaufaniu: możesz wypożyczyć książkę, przeczytać ją bez pośpiechu i odnieść na miejsce — albo zostawić w zamian inny tytuł, który sam Cię zachwycił. Dzięki temu każda „Biblioteka w Słońcu” żyje, zmienia się i rośnie razem z lokalną społecznością.</p></div>
         </div>
       </section>
 
       <section id="dolacz" className="section-pad bg-forest text-forest-foreground">
         <div className="page-number opacity-30">03</div>
-        <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-10"><div data-reveal className="reveal max-w-3xl"><p className="chapter text-sage-light">Dołącz do nas</p><h2 className="section-title">Jedna biblioteczka.<br/>Setki nowych historii.</h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-forest-muted sm:mt-7 sm:text-lg">Szukamy lokalnych społeczności, szkół, przedszkoli, opiekunów miejsc i wolontariuszy, którzy pomogą książkom docierać dalej.</p></div><div className="mt-12 grid gap-px bg-forest-line md:grid-cols-3 lg:mt-14">{[["01","Zgłoś miejsce","Plac zabaw, park, szkoła lub przedszkole."],["02","Zostań opiekunem","Dbaj o biblioteczkę i jej księgozbiór."],["03","Podaruj książki","Pomóż nam tworzyć mądre kolekcje."]].map(([n,t,d])=><div className="bg-forest p-6 sm:p-7 lg:p-10" key={n}><span className="text-sm text-sage-light">{n}</span><h3 className="mt-8 font-display text-2xl lg:mt-12">{t}</h3><p className="mt-3 text-forest-muted">{d}</p></div>)}</div></div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 lg:px-10"><div data-reveal className="reveal max-w-3xl"><p className="chapter text-sage-light">Dołącz do nas</p><h2 className="section-title">Jedna biblioteczka.<br/>Setki nowych historii.</h2><p className="mt-6 max-w-2xl text-base leading-relaxed text-forest-muted sm:mt-7 sm:text-lg">Szukamy lokalnych społeczności, szkół, przedszkoli, ośrodków sportowych, aby stworzyć Waszą „Bibliotekę w Słońcu”. Każde miejsce potrzebuje opiekuna — wolontariuszy, którzy pomogą książkom docierać dalej i razem z nami zadbają o księgozbiór.</p></div><div className="mt-12 grid gap-px bg-forest-line md:grid-cols-3 lg:mt-14">{[["01","Zgłoś miejsce","Plac zabaw, park, szkoła lub przedszkole."],["02","Zostań opiekunem","Dbaj o biblioteczkę i jej księgozbiór."],["03","Podaruj książki","Pomóż nam tworzyć mądre kolekcje."]].map(([n,t,d])=><div className="bg-forest p-6 sm:p-7 lg:p-10" key={n}><span className="text-sm text-sage-light">{n}</span><h3 className="mt-8 font-display text-2xl lg:mt-12">{t}</h3><p className="mt-3 text-forest-muted">{d}</p></div>)}</div></div>
       </section>
 
       <section id="zafunduj" className="section-pad bg-paper">
@@ -117,11 +117,13 @@ function Index() {
             </div>
             <div className="border-t border-foreground/20 pt-5">
               <p className="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">Telefon</p>
-              <a href="tel:+48501550916" className="mt-2 block font-display text-xl text-primary sm:text-2xl">501 550 916</a>
+              <a href="tel:+48501550916" className="mt-2 block font-display text-xl text-primary sm:text-2xl">+48 501 550 916</a>
             </div>
             <div className="border-t border-foreground/20 pt-5">
               <p className="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">Adres</p>
-              <p className="mt-2 font-display text-xl sm:text-2xl">Królów Polskich 9A</p>
+              <p className="mt-2 font-display text-xl sm:text-2xl">Fundacja Wspólna Wyobraźnia</p>
+              <p className="font-display text-xl sm:text-2xl">Królów Polskich 9A</p>
+              <p className="font-display text-xl sm:text-2xl">02-495 Warszawa</p>
             </div>
           </div>
         </div>
