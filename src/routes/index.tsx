@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowDown, ArrowRight, BookOpen, HandHeart, Heart, Mail, MapPin, Menu, Sprout, X } from "lucide-react";
+import { ArrowDown, ArrowRight, BookOpen, Facebook, HandHeart, Heart, Instagram, Mail, MapPin, Menu, Sprout, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoAsset from "@/assets/logo-fundacji.jpg.asset.json";
 import logoAnimationAsset from "@/assets/animacja-logo.mp4.asset.json";
@@ -77,7 +77,7 @@ function Index() {
         <div className="page-number">01</div>
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-5 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 lg:px-10">
           <div data-reveal className="reveal"><p className="chapter">O fundacji</p><h2 className="section-title">Rozwój zaczyna się od wyobraźni.</h2></div>
-          <div data-reveal className="reveal lg:pt-14"><p className="lead">Wspieramy czytelnictwo i rozwój kulturalny w Polsce. Chcemy, by dobra książka była naturalną częścią codzienności każdego dziecka.</p><div className="mt-8 grid gap-5 sm:grid-cols-3 lg:mt-10"><div className="border-t border-foreground/25 pt-5"><BookOpen className="mb-4 text-primary sm:mb-5"/><h3 className="font-display text-xl">Czytelnictwo</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Budujemy trwałą relację dzieci z książką.</p></div><div className="border-t border-foreground/25 pt-5"><Sprout className="mb-4 text-primary sm:mb-5"/><h3 className="font-display text-xl">Rozwój</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Rozbudzamy ciekawość i samodzielność.</p></div><div className="border-t border-foreground/25 pt-5"><MapPin className="mb-4 text-primary sm:mb-5"/><h3 className="font-display text-xl">Bliskość</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Działamy tam, gdzie dzieci spędzają czas.</p></div></div></div>
+          <div data-reveal className="reveal lg:pt-14"><p className="lead">Wspieramy czytelnictwo i rozwój kulturalny w Polsce. Chcemy, by dobra książka była naturalną częścią codzienności każdego, a zwłaszcza dzieci.</p><div className="mt-8 grid gap-5 sm:grid-cols-3 lg:mt-10"><div className="border-t border-foreground/25 pt-5"><BookOpen className="mb-4 text-primary sm:mb-5"/><h3 className="font-display text-xl">Czytelnictwo</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Budujemy trwałą relację dzieci z książką.</p></div><div className="border-t border-foreground/25 pt-5"><Sprout className="mb-4 text-primary sm:mb-5"/><h3 className="font-display text-xl">Rozwój</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Rozbudzamy ciekawość i samodzielność.</p></div><div className="border-t border-foreground/25 pt-5"><MapPin className="mb-4 text-primary sm:mb-5"/><h3 className="font-display text-xl">Bliskość</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Działamy tam, gdzie dzieci spędzają czas.</p></div></div></div>
         </div>
       </section>
 
@@ -95,7 +95,7 @@ function Index() {
       </section>
 
       <section id="zafunduj" className="section-pad bg-paper">
-        <div className="page-number">04</div><div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-5 lg:grid-cols-[1.1fr_.9fr] lg:gap-12 lg:px-10"><div data-reveal className="reveal"><p className="chapter">Zafunduj biblioteczkę</p><h2 className="section-title">Zostaw po sobie miejsce pełne opowieści.</h2></div><div data-reveal className="reveal lg:pt-16"><p className="lead">Sponsorzy, patroni i darczyńcy umożliwiają powstawanie kolejnych punktów na czytelniczej mapie Polski.</p><ul className="my-8 space-y-4">{["solidna drewniana biblioteczka","starannie wybrany księgozbiór","oznaczenie partnera projektu","opieka i uzupełnianie książek"].map(x=><li className="flex items-start gap-3" key={x}><span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-accent text-xs">✓</span>{x}</li>)}</ul><Button asChild variant="warm" size="hero"><a href="#kontakt">Porozmawiajmy <Mail /></a></Button></div></div>
+        <div className="page-number">04</div><div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-5 lg:grid-cols-[1.1fr_.9fr] lg:gap-12 lg:px-10"><div data-reveal className="reveal"><p className="chapter">Zafunduj biblioteczkę</p><h2 className="section-title">Zostaw po sobie miejsce pełne opowieści.</h2></div><div data-reveal className="reveal lg:pt-16"><p className="lead">Sponsorzy, patroni i darczyńcy umożliwiają powstawanie kolejnych punktów na czytelniczej mapie Polski.</p><ul className="my-8 space-y-4">{["solidna drewniana biblioteczka","starannie wybrany księgozbiór","oznaczenie partnera projektu","steward opiekujący się punktem","uzupełnianie książek","raport, zaświadczenie darowizny lub umowa"].map(x=><li className="flex items-start gap-3" key={x}><span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-accent text-xs">✓</span>{x}</li>)}</ul><Button asChild variant="warm" size="hero"><a href="#kontakt">Porozmawiajmy <Mail /></a></Button></div></div>
       </section>
 
       <section id="wspieraj" className="section-pad relative bg-terracotta text-primary-foreground">
@@ -125,12 +125,24 @@ function Index() {
               <p className="font-display text-xl sm:text-2xl">Królów Polskich 9A</p>
               <p className="font-display text-xl sm:text-2xl">02-495 Warszawa</p>
             </div>
+            <div className="border-t border-foreground/20 pt-5">
+              <p className="text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">Znajdziesz nas</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                <a href="https://www.instagram.com/wspolnawyobraznia?stkn=MXJ4eGQ0eXVmcmg3aQ==" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 rounded-full border border-foreground/15 bg-card px-5 py-3 font-display text-lg text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:text-xl">
+                  <Instagram className="h-5 w-5 shrink-0 sm:h-6 sm:w-6" /> Instagram
+                </a>
+                <a href="https://www.facebook.com/share/1QH2jBL36j/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 rounded-full border border-foreground/15 bg-card px-5 py-3 font-display text-lg text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:text-xl">
+                  <Facebook className="h-5 w-5 shrink-0 sm:h-6 sm:w-6" /> Facebook
+                </a>
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Zapraszamy również do kontaktu przez nasze profile — bieżące wiadomości z projektu publikujemy właśnie tam.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="bg-paper py-16 sm:py-20"><div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 text-center sm:gap-10 sm:px-5"><video className="h-44 w-44 rounded-full object-cover mix-blend-multiply sm:h-64 sm:w-64" autoPlay muted loop playsInline poster={logoAsset.url}><source src={logoAnimationAsset.url} type="video/mp4"/></video><div><p className="font-display text-2xl sm:text-3xl">Wspólna Wyobraźnia</p><p className="mt-2 text-muted-foreground">Książki bliżej dzieci. Biblioteki bliżej codzienności.</p></div></div></section>
-      <footer className="border-t border-foreground/10 bg-paper px-4 py-8 sm:px-5"><div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between"><p>© 2026 Fundacja Wspólna Wyobraźnia</p><p>Biblioteka w Słońcu · Polska</p></div></footer>
+      <footer className="border-t border-foreground/10 bg-paper px-4 py-8 sm:px-5"><div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between"><p>© 2026 Fundacja Wspólna Wyobraźnia</p><div className="flex items-center gap-4"><p>Biblioteka w Słońcu · Polska</p><div className="flex items-center gap-2"><a href="https://www.instagram.com/wspolnawyobraznia?stkn=MXJ4eGQ0eXVmcmg3aQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram fundacji" className="grid h-9 w-9 place-items-center rounded-full border border-foreground/15 text-primary transition-colors hover:bg-primary hover:text-primary-foreground"><Instagram className="h-4 w-4" /></a><a href="https://www.facebook.com/share/1QH2jBL36j/" target="_blank" rel="noopener noreferrer" aria-label="Facebook fundacji" className="grid h-9 w-9 place-items-center rounded-full border border-foreground/15 text-primary transition-colors hover:bg-primary hover:text-primary-foreground"><Facebook className="h-4 w-4" /></a></div></div></div></footer>
     </main>
   );
 }
