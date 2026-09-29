@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import logoAsset from "@/assets/logo-fundacji.jpg.asset.json";
 import logoAnimationAsset from "@/assets/animacja-logo.mp4.asset.json";
 import libraryImage from "@/assets/biblioteka-w-sloncu.jpg";
-import childImage from "@/assets/dziecko-wybiera-ksiazke.jpg";
+import childImage from "@/assets/dziecko-wybiera-ksiazke-poprawione.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -45,7 +45,7 @@ function Index() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-foreground/10 bg-background/90 backdrop-blur-xl">
         <div className="mx-auto grid h-16 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 sm:h-20 sm:px-5 lg:px-10">
           <a href="#start" className="flex min-w-0 items-center gap-2 sm:gap-3" aria-label="Wspólna Wyobraźnia — strona główna">
-            <img src={logoAsset.url} alt="Logo fundacji" className="h-10 w-10 shrink-0 rounded-full object-cover sm:h-12 sm:w-12" />
+             <img src={logoAsset.url} alt="Logo fundacji" className="h-[2.875rem] w-[2.875rem] shrink-0 rounded-full object-cover sm:h-[3.45rem] sm:w-[3.45rem]" />
             <span className="truncate font-display text-base font-semibold sm:text-lg">Wspólna Wyobraźnia</span>
           </a>
           <nav className="hidden items-center gap-5 xl:flex" aria-label="Główna nawigacja">
@@ -84,7 +84,7 @@ function Index() {
       <section id="projekt" className="section-pad bg-secondary">
         <div className="page-number">02</div>
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-5 lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-10">
-          <div data-reveal className="reveal relative"><img src={childImage} loading="lazy" width={1008} height={1264} alt="Dziecko wybierające książkę z plenerowej biblioteczki" className="aspect-[4/5] w-full object-cover"/><div className="sun-badge"><span className="text-2xl sm:text-3xl">☀</span><span>Metalowa<br/>tabliczka Fundatora</span></div></div>
+           <div data-reveal className="reveal relative"><img src={childImage} loading="lazy" width={1008} height={1264} alt="Dziecko wybierające książkę z dwudrzwiowej plenerowej biblioteczki" className="aspect-[4/5] w-full object-cover"/><div className="sun-badge"><span className="text-lg sm:text-xl">☀</span><span>Możliwość umieszczenia<br/>tabliczki fundatora</span></div></div>
           <div data-reveal className="reveal"><p className="chapter">Projekt Główny</p><h2 className="section-title">Biblioteka<br/>w Słońcu</h2><p className="lead mt-6 sm:mt-7">Małe, drewniane biblioteczki z wyselekcjonowaną literaturą dla dzieci w wieku 2–15 lat.</p><div className="my-8 flex flex-wrap items-center gap-x-3 gap-y-2 border-y border-foreground/15 py-5 sm:gap-4"><span className="font-display text-2xl text-primary sm:text-3xl">Weź</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Przeczytaj</span><ArrowRight className="h-5 w-5 shrink-0"/><span className="font-display text-2xl text-primary sm:text-3xl">Podziel się</span></div><p className="leading-relaxed text-muted-foreground">Idea <b>Book-Swap</b> jest naturalna i prosta i oparta na wzajemnym zaufaniu: możesz wypożyczyć książkę, przeczytać ją bez pośpiechu i odnieść na miejsce — albo zostawić w zamian inny tytuł, który sam Cię zachwycił. Dzięki temu każda „Biblioteka w Słońcu” żyje, zmienia się i rośnie razem z lokalną społecznością.</p></div>
         </div>
       </section>
