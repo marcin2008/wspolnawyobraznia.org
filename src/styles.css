@@ -179,7 +179,7 @@
 @utility nav-link { position: relative; font-size: .75rem; font-weight: 700; }
 @utility field-label { display: grid; gap: .55rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
 @utility field { width: 100%; border: 0; border-bottom: 1px solid var(--border); background: transparent; padding: .8rem 0; font-size: 1rem; font-weight: 400; text-transform: none; letter-spacing: 0; outline: none; }
-@utility sun-badge { position: absolute; right: 0.5rem; bottom: 2rem; display: flex; height: 7.2rem; width: 7.2rem; align-items: center; justify-content: center; border-radius: 999px; background: var(--primary); color: var(--primary-foreground); transform: rotate(-8deg); font-size: .62rem; line-height: 1.35; text-align: center; padding: 0 .55rem; font-weight: 600; letter-spacing: .01em; }
+@utility sun-badge { position: absolute; right: 0.5rem; bottom: 2rem; display: flex; height: 7.2rem; width: 7.2rem; align-items: center; justify-content: center; border-radius: 999px; background: var(--primary); color: var(--primary-foreground); transform: rotate(-8deg); font-size: .74rem; line-height: 1.3; text-align: center; padding: 0 .4rem; font-weight: 600; letter-spacing: .01em; }
 @utility reveal { opacity: 0; transform: translateY(2rem); transition: opacity .8s ease, transform .8s ease; }
 
 .reveal.is-visible, [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
@@ -191,5 +191,5 @@
 .field:focus { border-color: var(--primary); }
 @keyframes rise { from { opacity: 0; transform: translateY(2rem); } to { opacity: 1; transform: translateY(0); } }
 @keyframes bob { 50% { transform: translateY(.4rem); } }
-@media (max-width: 700px) { .hero-wash { background: linear-gradient(0deg, color-mix(in oklab, var(--paper) 96%, transparent) 0%, color-mix(in oklab, var(--paper) 62%, transparent) 58%, transparent 100%); } .sun-badge { right: .75rem; bottom: .75rem; height: 6rem; width: 6rem; font-size: .6rem; } }
+@media (max-width: 700px) { .hero-wash { background: linear-gradient(0deg, color-mix(in oklab, var(--paper) 96%, transparent) 0%, color-mix(in oklab, var(--paper) 62%, transparent) 58%, transparent 100%); } .sun-badge { right: .75rem; bottom: .75rem; height: 6rem; width: 6rem; font-size: .68rem; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } .reveal { opacity: 1; transform: none; } }
